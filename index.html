@@ -8,8 +8,8 @@
 <body>
 
   <header>
-    <div>
-      <div>root@itzdeep:~#</div>
+    <div class="header-container">
+      <div class="logo">root@itzdeep:~#</div>
       <nav>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
@@ -19,20 +19,59 @@
     </div>
   </header>
 
-  <main>
+  <main class="content-wrapper">
     <section id="hero">
-      <h1>Hey, I'm Deep.</h1>
-      <p>High school student, self-hoster, and hardware tinkerer.</p>
+      <div class="hero-box">
+        <h1>Hey, I'm Deep.</h1>
+        <p class="subtitle">High school student, self-hoster, and hardware tinkerer.</p>
+        <p>I spend most of my free time breaking circuits, writing automation scripts, and configuring network tunnels.</p>
+      </div>
     </section>
 
     <section id="about">
       <h2>About Me</h2>
-      <!-- Content goes here later -->
+      <div class="card">
+        <p>I'm a teen developer into low-level tech, home lab setups, and game servers. Whether it's wiring microcontrollers over UART, tuning game streaming setups via Moonlight/Sunshine, or writing userscripts, I love building things from scratch.</p>
+      </div>
     </section>
 
     <section id="projects">
       <h2>What I've Built</h2>
-      <!-- Projects go here later -->
+      <div class="project-grid">
+        <div class="card project-card">
+          <h3>Nebula SMP</h3>
+          <p class="project-meta">Self-Hosted / Infrastructure</p>
+          <p>A self-hosted multiplayer Minecraft network running custom server configs and Tailscale mesh routing.</p>
+        </div>
+        <div class="card project-card">
+          <h3>Hardware Keystroke Injector</h3>
+          <p class="project-meta">Digispark ATtiny85 / C++</p>
+          <p>A programmed USB rubber ducky style controller configured with direct HID payloads.</p>
+        </div>
+        <div class="card project-card">
+          <h3>Web Script Automation</h3>
+          <p class="project-meta">JavaScript / Tampermonkey</p>
+          <p>Custom userscripts written to handle DOM traversal and timed event solvers in the browser.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Toolbox</h2>
+      <div class="card">
+        <ul>
+          <li><strong>Languages:</strong> C++, JavaScript, Python, Bash</li>
+          <li><strong>Hardware:</strong> ESP32, Arduino Uno, ATtiny85</li>
+          <li><strong>Networking:</strong> Linux, Tailscale, Self-Hosting</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Connect</h2>
+      <div class="card">
+        <p>Find me on Hack Club Slack (@itzdeep2)</p>
+      </div>
     </section>
   </main>
 
